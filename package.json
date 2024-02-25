@@ -1,0 +1,31 @@
+{
+	"name": "dependency-injection",
+	"version": "0.0.1",
+	"description": "Dependency injection example on Node.js",
+	"main": "index.js",
+	"private": false,
+	"keywords": [],
+	"author": "Ruslan Kolodich <rk0l0dic4rus@gmail.com> (https://github.com/rkolodich)",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"build": "tsc && tsc-alias",
+		"start": "npm run build && node dist/index.js"
+	},
+	"dependencies": {
+		"@types/lowdb": "^1.0.15",
+		"@types/node": "^20.11.20",
+		"@types/uuid": "^9.0.8",
+		"cross-env": "^7.0.3",
+		"inversify": "^6.0.2",
+		"lowdb": "^7.0.1",
+		"reflect-metadata": "^0.2.1",
+		"tsc": "^2.0.4",
+		"tsc-alias": "^1.8.8",
+		"typescript": "^5.3.3",
+		"uuid": "^9.0.1"
+	},
+	"imports": {
+		"#src/*": "./src/*"
+	}
+}
